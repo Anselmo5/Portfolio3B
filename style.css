@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital@1&display=swap');
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: linear-gradient(to right, #f0fdff, #ffffff, #d4d4d4,  #696969, #363636, #2e2e2e );
+    background-size: 500% 100%;
+    animation-name: background;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes background{
+
+    0%{
+        background-position-x: 0%;
+    }
+
+
+    100%{
+         background-position-x: 100%;
+
+    }
+}
+ /* fim do background*/
 
 *{
     margin: 0;
@@ -11,40 +32,53 @@ body{
     border: none;
 }
 
-
+/* Contrução da animation name*/
 .container{
     display: inline-flex;
+    margin-left: 155px; 
+}
+
+.container h2{
+    font-size: 60px;
+    margin-top: 3px;
+    font-family: 'EB Garamond', serif;
 }
 
 .container .estatico{
     color: #000000;
     font-size: 60px;
     font-weight: 400;
+    
 
 }
 
 .container .dinamigo{
     margin-left: 15px;
     line-height: 90px;
-    height: 90px;
-    left: 0;
-    position: relative;
-    top: 0;
     overflow: hidden;
-    animation: slide 6s steps(4) infinite;
+    height: 90px;
+   
 }
 
-@keyframes slide{
-    100%{
-        top: -360px;
-    }
-}
 
 .dinamigo li{
     color: #fc6d6d;
     list-style: none;
     font-size: 60px;
-    font-weight: 500px;
+    font-weight: 500;
+    left: 0;
+    top:0;
+    position: relative;
+    animation: slide 6s steps(4) infinite;
+    font-family: 'EB Garamond', serif;
+
+}
+
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
 }
 
 .dinamigo li span::after{
@@ -55,19 +89,57 @@ body{
     border-left: 2px solid #fc6d6d;
     left: 0;
     animation: typing 1.5s steps(10) infinite;
-
-
 }
 
 
 .dinamigo li span{
     position: relative;
-
 }
+
 
 @keyframes typing{
     100%{
         left: 100%;
         margin: 0 -35px 0 35px;
     }
+}
+
+
+/* fim da Contrução da animation name*/
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+
+}
+
+.btn-container button{
+    padding: 10px 30px;
+    background-color: #2e2e2e;
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn button{
+    border-image: -webkit-linear-gradiente(left, #009efa,#4ffbdf)
+1;
+}
+
+.btn-container a{
+    text-decoration: none;
+}
+
+.btn-container button a :hover{
+    color: #fc6d6d;
+}
+
+.btn-container button :hover{
+    padding: 10px 30px;
+background: linear-gradient(to right, #009efa,#4ffbdf);
 }

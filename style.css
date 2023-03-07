@@ -10,7 +10,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 25vh;
     margin-left: 50px;
 }
 
@@ -50,13 +50,50 @@ button:hover{
     transition: all 1;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width : 800px) {
+
+    h2{
+        font-size: 4em;
+        color: #fff;
+        font-family: 'EB Garamond', serif;
+        margin-top: 15vh;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+    
+    nav button{
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        font-size: 1.5em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
+    
+}
+
+
 @media screen and (max-width : 600px) {
 
     h2{
         font-size: 4em;
         color: #fff;
         font-family: 'EB Garamond', serif;
-        margin-top: 250px;
+        margin-top: 15vh;
     }
     
     span{
@@ -85,7 +122,7 @@ button:hover{
     h2{
         font-size: 3em;
         color: #fff;
-        margin-top: 250px;
+        margin-top: 15vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -115,7 +152,7 @@ button:hover{
     h2{
         font-size: 3em;
         color: #fff;
-        margin-top: 180px;
+        margin-top: 15vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -151,7 +188,7 @@ button:hover{
     h2{
         font-size: 2.7em;
         color: #fff;
-        margin-top: 250px;
+        margin-top: 15vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -181,7 +218,7 @@ button:hover{
     h2{
         font-size: 2.5em;
         color: #fff;
-        margin-top: 250px;
+        margin-top: 15vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -211,6 +248,7 @@ button:hover{
     h2{
         font-size: 2em;
         color: #fff;
+        margin-top: 15vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -240,10 +278,11 @@ button:hover{
 
 @media screen and (max-width : 281px) {
     h2{
-        font-size: 1.7em;
+        font-size: 1.2em;
         color: #fff;
+        margin-top: 15vh;
         font-family: 'EB Garamond', serif;
-        margin-right: 10px;
+        margin-left: -15px;
     }
     
     span{

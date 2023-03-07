@@ -1,137 +1,233 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital@1&display=swap');
+
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    width: auto;
+    height: auto;
     background: #111111;
-    background-size: 500% 100%;
-    animation-name: background;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
-@keyframes background{
-
-    0%{
-        background-position-x: 0%;
-    }
-
-
-    100%{
-         background-position-x: 100%;
-
-    }
-}
- /* fim do background*/
-
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 50px;
 }
 
-/* Contrução da animation name*/
-.container{
-    display: inline-flex;
-    margin-left: 155px; 
-}
-
-.container h2{
-    font-size: 60px;
-    margin-top: 3px;
-    font-family: 'EB Garamond', serif;
-}
-
-.container .estatico{
-    color: #ffffff;
-    font-size: 60px;
-    font-weight: 400;
-    margin-left: 500px;
-    
-
-}
-
-.container .dinamigo{
-    margin-left: 15px;
-    line-height: 90px;
-    overflow: hidden;
-    height: 90px;
-   
-}
-
-
-.dinamigo li{
-    color: #fc6d6d;
-    list-style: none;
-    font-size: 60px;
-    font-weight: 500;
-    left: 0;
-    top:0;
-    margin-left: 500px;
-    position: relative;
-    animation: slide 6s steps(4) infinite;
+h2{
+    font-size: 5em;
+    color: #fff;
     font-family: 'EB Garamond', serif;
 
 }
 
-
-@keyframes slide{
-    100%{
-        top: -360px;
-    }
+span{
+    color: #FC6D6D;
 }
-
-.dinamigo li span::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-left: 2px solid #fc6d6d;
-    left: 0;
-    animation: typing 1.5s steps(10) infinite;
-}
-
-
-.dinamigo li span{
-    position: relative;
-}
-
-
-@keyframes typing{
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
-
-/* fim da Contrução da animation name*/
-
 
 nav{
-  margin-top: 250px; 
-  margin-right: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn-container button{
-position: relative;
-width: 150px;
-height: 50px;
-background: rgba(255, 255, 255, 0.07);
-box-shadow: 4px 4px 4px #FC6D6D;
-border-radius: 5px;
-color: #ffff;
-font-size: 1em;
-font-family: 'EB Garamond', serif;
-transition: all 1s;
-margin-top: 250px;
-margin-right: 610px;
+nav button{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'EB Garamond', serif;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 4px 4px 4px #FC6D6D;
+    border-radius: 5px;
+    border: none;
+    transition: all 1s;
 }
 
-.btn-container button:hover{
+button:hover{
+    box-shadow: 0px 2px 2px #FC6D6D;
     background: #FC6D6D;
-    box-shadow: 0px 4px 4px #FC6D6D;
-    transition: all 1s
+    transition: all 1;
+}
+
+@media screen and (max-width : 600px) {
+
+    h2{
+        font-size: 4em;
+        color: #fff;
+        font-family: 'EB Garamond', serif;
+        margin-top: 250px;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+    
+    nav button{
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        font-size: 1.5em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width : 480px) {
+    h2{
+        font-size: 3em;
+        color: #fff;
+        margin-top: 250px;
+        font-family: 'EB Garamond', serif;
+        margin-right: 10px;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+
+    nav button{
+        width: 150px;
+        height: 50px;
+        color: #fff;
+        font-size: 1.3em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
+    
+}
+
+
+
+
+
+@media screen and (max-width : 376px) {
+    h2{
+        font-size: 2.7em;
+        color: #fff;
+        margin-top: 250px;
+        font-family: 'EB Garamond', serif;
+        margin-right: 10px;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+
+    nav button{
+        width: 150px;
+        height: 50px;
+        color: #fff;
+        font-size: 0.9em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
+    
+}
+
+
+@media screen and (max-width : 352px) {
+    h2{
+        font-size: 2.5em;
+        color: #fff;
+        margin-top: 250px;
+        font-family: 'EB Garamond', serif;
+        margin-right: 10px;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+
+    nav button{
+        width: 120px;
+        height: 40px;
+        color: #fff;
+        font-size: 0.9em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
+    
+}
+
+
+@media screen and (max-width : 331px) {
+    h2{
+        font-size: 2em;
+        color: #fff;
+        font-family: 'EB Garamond', serif;
+        margin-right: 10px;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+
+    nav button{
+        width: 150px;
+        height: 50px;
+        color: #fff;
+        font-size: 1.3em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width : 281px) {
+    h2{
+        font-size: 1.7em;
+        color: #fff;
+        font-family: 'EB Garamond', serif;
+        margin-right: 10px;
+    }
+    
+    span{
+        color: #FC6D6D;
+    }
+
+    nav button{
+        width: 100px;
+        height: 30px;
+        color: #fff;
+        font-size: 0.9em;
+        font-family: 'EB Garamond', serif;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 4px 4px 4px #FC6D6D;
+        border-radius: 5px;
+        border: none;
+        transition: all 1s;
+    }
+    
 }

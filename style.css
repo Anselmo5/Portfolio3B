@@ -204,6 +204,11 @@ a{
         padding: 2.8vw 4vw;
         font-size: 3.5vw;
     }
+
+    .btn button:hover{
+        box-shadow: 0px 2px 2px #FC6D6D;
+        background: #FC6D6D;
+    }
 }
 
 

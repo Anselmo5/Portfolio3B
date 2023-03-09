@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital@1&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-
 *{
     margin: 0px;
     padding: 0px;
@@ -20,11 +18,7 @@ body{
     
 }
 
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
+
 
 
 .area{
@@ -155,7 +149,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: -10vh;
     margin-left: 50px;
 }
 
@@ -208,7 +202,7 @@ a{
         font-size: 4em;
         color: #fff;
         font-family: 'EB Garamond', serif;
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
     
     span{
@@ -242,7 +236,7 @@ a{
         font-size: 4em;
         color: #fff;
         font-family: 'EB Garamond', serif;
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
     
     span{
@@ -275,7 +269,7 @@ a{
     h2{
         font-size: 3em;
         color: #fff;
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -309,7 +303,7 @@ a{
     h2{
         font-size: 3em;
         color: #fff;
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -349,7 +343,7 @@ a{
     h2{
         font-size: 2.7em;
         color: #fff;
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -383,7 +377,7 @@ a{
     h2{
         font-size: 2.5em;
         color: #fff;
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -417,7 +411,7 @@ a{
     h2{
         font-size: 2em;
         color: #fff;
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-family: 'EB Garamond', serif;
         margin-right: 10px;
     }
@@ -453,7 +447,7 @@ a{
     h2{
         font-size: 1.2em;
         color: #fff;
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-family: 'EB Garamond', serif;
         margin-left: -15px;
     }

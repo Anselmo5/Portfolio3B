@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital@1&display=swap');
 
+/* inicio index*/
 
 *{
     margin: 0px;
@@ -7,7 +8,7 @@
 }
 
 body{
-    font-family: 'Exo', sans-serif;
+ 
 }
 
 
@@ -37,6 +38,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .circles li{
@@ -45,7 +47,7 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: #FC6D6D;
+    background: #fc6d6d8a;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -170,7 +172,7 @@ nav{
     align-items: center;
 }
 
-nav button{
+nav .btn button{
     width: 150px;
     height: 50px;
     color: #fff;
@@ -183,7 +185,7 @@ nav button{
     transition: all 1s;
 }
 
-button:hover{
+ .btn button:hover{
     box-shadow: 0px 2px 2px #FC6D6D;
     background: #FC6D6D;
     transition: all 1;
@@ -222,10 +224,6 @@ a{
         transition: all 1s;
     }
 
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
     
 }
 
@@ -256,10 +254,7 @@ a{
         transition: all 1s;
     }
     
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
+  
     
 }
 
@@ -291,10 +286,6 @@ a{
         transition: all 1s;
     }
 
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
     
 }
 
@@ -325,10 +316,6 @@ a{
         transition: all 1s;
     }
 
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
     
 }
 
@@ -365,10 +352,6 @@ a{
         transition: all 1s;
     }
 
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
     
 }
 
@@ -399,11 +382,6 @@ a{
         transition: all 1s;
     }
     
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
-    
 }
 
 
@@ -432,11 +410,6 @@ a{
         border: none;
         transition: all 1s;
     }
-
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
 }
 
 
@@ -469,8 +442,52 @@ a{
         transition: all 1s;
     }
 
-    button:hover{
-        box-shadow: 0px 2px 2px #FC6D6D;
-    }
-    
 }
+
+/* fim index*/
+
+
+/* Inicio paginas - começo*/
+
+
+nav.topo{
+    bottom: 170px;
+    width: 100%;
+    height:160px;
+    background: rgba(0, 0, 0, 0.021);
+    position: absolute;
+}
+
+nav.topo ul{
+    margin: 0;
+    padding: 0;
+    list-style:none ;
+    float: left;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+nav.topo ul li{
+    float: left;
+    padding: 8px;
+    margin-left:190vh;
+ 
+}
+
+
+
+header.topo ul a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+ ul li a:hover {
+    color: #FC6D6D;
+}
+
+
+ul a:hover, .active{
+    color: #FC6D6D;
+}   
+

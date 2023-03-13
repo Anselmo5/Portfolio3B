@@ -209,7 +209,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  margin-top: -500px
+  margin-top: -560px
 }
 nav {
   display: flex;
@@ -246,7 +246,7 @@ a:hover{
 @media (max-width: 40.625em) {
 
  .wrapper{
-    margin-top: -410px;
+    margin-top: -500px;
  }   
   nav .menu {
     width: 100%;

@@ -244,183 +244,40 @@ a{
     text-decoration: none;
 }
 
-
-
 .btn {
-    display: flex;
-    justify-content: space-around;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .btn button {
-    width: 150px;
-    height: 50px;
-    background-color: #24232396;
-    margin: 20px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    font-family: 'EB Garamond', serif;
-    padding: 1.8vw 3vw;
-  }
-  
-  .btn button:before, .btn button:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #FC6D6D;
-    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
-  }
-  
-  .btn button:before {
-    right: 0;
-    top: 0;
-    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
-  }
-  
-  .btn button:after {
-    left: 0;
-    bottom: 0;
-  }
-  
-  .btn button span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-  }
-  
-  .btn button span:before, .btn button span:after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 0;
-    background-color: #FC6D6D;
-    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
-  }
-  
-  .btn button span:before {
-    right: 0;
-    top: 0;
-    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
-  }
-  
-  .btn button span:after {
-    left: 0;
-    bottom: 0;
-  }
-  
-  .btn button p {
-    padding: 0;
-    margin: 0;
-    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .btn button p:before, .btn button p:after {
-    position: absolute;
-    width: 100%;
-    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
-    z-index: 1;
-    left: 0;
-  }
-  
-  .btn button p:before {
-    content: attr(data-title);
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .btn button p:after {
-    content: attr(data-text);
-    top: 150%;
-    color: #fff
-  }
-  
-  .btn button:hover:before, .btn button:hover:after {
-    width: 100%;
-  }
-  
-  .btn button:hover span {
-    z-index: 1;
-  }
-  
-  .btn button:hover span:before, .btn button:hover span:after {
-    height: 100%;
-  }
-  
-  .btn button:hover p:before {
-    top: -50%;
-    transform: rotate(5deg);
-  }
-  
-  .btn button:hover p:after {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .btn button.start {
-    background-color: #FC6D6D;
-    box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease;
-  }
-  
-  .btn button.start p:before {
-    top: -50%;
-    transform: rotate(5deg);
-  }
-  
-  .btn button.start p:after {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 1.5vw 5vw;
+    font-size: 4vw;
+    font-weight: 700px;
     color: white;
-    transition: all 0s ease;
-    content: attr(data-start);
-    top: 50%;
-    transform: translateY(-50%);
-    animation: start 0.3s ease;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes start {
-    from {
-      top: -50%;
-    }
-  }
-  
-  .btn button.start:hover:before, .btn button.start:hover:after {
-    display: none;
-  }
-  
-  .btn button.start:hover span {
-    display: none;
-  }
-  
-  .btn button:active {
-    outline: none;
-    border: none;
-  }
-  
-  .btn button:focus {
-    outline: 0;
-  }
+    border: 3px solid rgb(252, 70, 100);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'EB Garamond', serif;
+   }
+   
+   .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 70, 100);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    transform: translateX(0);
+   }
+
 
 @media screen and (max-width : 600px) {
 
@@ -431,6 +288,11 @@ a{
         padding: 2.8vw 4vw;
         font-size: 3.5vw;
     }
+
+    .btn{
+        font-size: 7vw;
+    }
+
 }
 
 

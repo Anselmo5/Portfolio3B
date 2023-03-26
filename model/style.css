@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital@1&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Bitter:wght@300&display=swap');
+
 
 
 /* reset css*/
@@ -200,14 +201,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -10vh;
-    margin-left: 50px;
+    flex-direction: row;
+    margin-top: -13vh;
+    margin-left: 55px;
 }
 
 h2{
-    font-size: 7vw;
+    font-size: 5vw;
     color: #fff;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Alkatra', cursive;
 
 }
 
@@ -221,23 +223,6 @@ nav{
     align-items: center;
 }
 
-/* nav .btn button{
-    padding: 1.8vw 3vw;
-    color: #fff;
-    font-size: 2.5vw;
-    font-family: 'EB Garamond', serif;
-    background: rgba(255, 255, 255, 0.07);
-    box-shadow: 4px 4px 4px #FC6D6D;
-    border-radius: 5px;
-    border: none;
-    transition: all 1s;
-}
-
- .btn button:hover{
-    box-shadow: 0px 2px 2px #FC6D6D;
-    background: #FC6D6D;
-    transition: all 1;
-} */
 
 a{
     color: #fff;
@@ -281,8 +266,34 @@ a{
 
 @media screen and (max-width : 600px) {
 
+    header{
+        margin-top: -22vh;
+    }
+
     h2{
-        font-size: 10vw;
+        font-size:9vw;
+    }
+    nav .btn button{
+        padding: 2.8vw 4vw;
+        font-size: 3.5vw;
+    }
+
+    .btn{
+        font-size: 7vw;
+    }
+
+}
+
+
+
+@media screen and (max-width : 375px) {
+
+    header{
+        margin-top: -16vh;
+    }
+
+    h2{
+        font-size:8vw;
     }
     nav .btn button{
         padding: 2.8vw 4vw;

@@ -191,36 +191,4 @@ table {
 
 
 
-@media (max-width: 40.625em) {
-
- .wrapper{
-    margin-top: -320px;
- }   
-  nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;  
-}
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-  nav label {
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-  }
-  nav #toggle:checked ~ .menu {
-    height: 100%;
-  }
-
-  a:hover{
-    text-decoration: none;
-  }
-}
-
-
-
-
 
